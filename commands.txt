@@ -58,9 +58,9 @@ a.ratingAuthor
 
 
 # 9. Вывести username и рейтинг лучшего пользователя (применяя сортировку и возвращая поля первого объекта)
-b = Author.objects.order_by('-ratingAuthor')[:1]
+bestUser = Author.objects.order_by('-ratingAuthor')[:1]
 for i in bestUser:
-   i.ratingAuthor
+    i.ratingAuthor
 	i.authorUser.username
 
 
